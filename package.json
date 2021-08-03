@@ -1,6 +1,6 @@
 {
   "name": "plugin-vuelib-collector",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Taro 小程序端收集第三方 Vue 组件库所使用的原生小程序标签",
   "main": "dist/index.js",
   "repository": "https://github.com/b2nil/plugin-vuelib-collector.git",
