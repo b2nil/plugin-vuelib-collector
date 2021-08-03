@@ -1,6 +1,8 @@
 # plugin-vuelib-collector
 > 用于收集第三方 Vue 组件库所使用到的原生小程序标签的 Taro 插件
 
+> 支持 Vue2 和 Vue3
+
 
 ## 用法
 
