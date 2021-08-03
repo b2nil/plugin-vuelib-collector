@@ -1,6 +1,3 @@
-// @ts-ignore
-import { componentConfig } from '@tarojs/mini-runner/dist/template/component.js'
-
 import type { IPluginContext } from '@tarojs/service'
 import type { NodeTransform } from '@vue/compiler-core'
 
@@ -8,7 +5,7 @@ interface IOptions {
   [key: string]: Array<string>
 }
 
-export default function (
+module.exports = function (
   ctx: IPluginContext,
   options: IOptions
 ) {
@@ -21,6 +18,7 @@ export default function (
       node.tagType === 1 /*ElementTypes.COMPONENT*/
     ) {
       const compName = ctx.helper.pascalCase(node.tag)
+      const { componentConfig } = require('@tarojs/mini-runner/dist/template/component.js')
       if (options[compName]) {
         for (const tag of options[compName]) {
           if (!componentConfig.includes.has(tag)) {
