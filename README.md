@@ -3,6 +3,11 @@
 
 > 支持 Vue2 和 Vue3
 
+# 安装
+```bash
+yarn add -D plugin-vuelib-collector
+
+```
 
 ## 用法
 
