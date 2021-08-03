@@ -7,8 +7,7 @@
   "author": "b2nil",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./esbuild.build.js",
-    "build": "rollup -c"
+    "build": "node ./esbuild.build.js"
   },
   "files": [
     "dist",
