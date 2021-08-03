@@ -1,2 +1,19 @@
 # plugin-vuelib-collector
-A Taro plugin for collecting mini-app tags used by 3rd party libs
+> 用于收集第三方 Vue 组件库所使用到的原生小程序标签的 Taro 插件
+
+
+## 用法
+
+例如组件 `HanziView` 用到了两个小程序原生标签: `view`, `canvas`。
+
+```ts
+// config/index.js
+{
+  plugins: [
+    ['plugin-vuelib-collector', {
+      'HanziView': ['canvas', 'view']
+    }]
+  ],
+}
+
+```
